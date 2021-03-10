@@ -1,23 +1,16 @@
 const http = require('http');
 const url = require('url');
-      
-const createHttpTerminator = require('http-terminator');
+
 
 const app = http.createServer((req, res) => {
     var parsedURL = url.parse(req.url, true);
     var pathName = parsedURL.pathname;
-    if(pathName == 'hello/') {
+    if (pathName == 'hello/') {
         res.end('Howdy :-)');
     }
 });
-app.listen(3535, msg => {
-    console.log('app runnign on port 3535')
+
+
+app.listen(8080, async msg => {
+    console.log('app runnign on port 8080')
 });
-
-
-
-const httpTerminator = createHttpTerminator({
-      app,
-});
-
-await httpTerminator.terminate();
