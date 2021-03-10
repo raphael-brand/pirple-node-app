@@ -5,7 +5,7 @@ const url = require('url');
 const app = http.createServer((req, res) => {
     var parsedURL = url.parse(req.url, true);
     var pathName = parsedURL.pathname;
-    if (pathName == 'hello/') {
+    if (pathName == '/hello/') {
         res.end('Howdy :-)');
     }
 });
