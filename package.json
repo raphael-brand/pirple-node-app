@@ -1,0 +1,14 @@
+{
+  "name": "pirple-nodejs",
+  "version": "1.0.0",
+  "description": "creating a simple hello/ route with a response.",
+  "main": "hello-route",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
